@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Fonts*/
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-light-webfont.eot");
+  src: url("../assets/fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-light-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-light-webfont.woff") format("woff"), url("../assets/fonts/opensans-light-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-lightitalic-webfont.eot");
+  src: url("../assets/fonts/opensa../assets/fonts/ns-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../assets/fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/* Global */
+body {
+  background: black;
+  color: #ffffff;
+  font-family: 'open_sans';
+  font-size: 16px; }
+
+.container {
+  min-width: 320px; }
+
+/* Navigation Section */
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 95vh;
+  transition: 2s; }
+
+.nav2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 50vh;
+  transition: 2s; }
+
+.logo {
+  width: 220px;
+  margin: 10px; }
+
+.logo2 {
+  width: 140px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.category_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.nav_title {
+  margin: 10px;
+  font-size: 13px; }
+
+#categorySelect {
+  margin: 10px;
+  font-size: 25px; }
+
+.loading {
+  width: 80px; }
+
+/* Articles Grid Area */
+.li_wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 2s; }
+  .li_wrapper:hover {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1); }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+.link_box {
+  display: block; }
+
+.article {
+  min-height: 70vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  overflow: hidden; }
+  .article:hover .article_content {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(0vh); }
+  .article:hover .article_title {
+    transition: 15s;
+    transform: translatex(-50vw); }
+
+.article_content {
+  transition: .8s;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 150%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 40vh;
+  transform: translateY(45vh);
+  padding: .5rem;
+  width: 100%;
+  overflow: hidden; }
+
+.article_title {
+  white-space: nowrap;
+  width: 20vw;
+  transform: translateX(5vw);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 0 0.5rem 0; }
+
+.article_abstract {
+  border-top: dashed rgba(255, 255, 255, 0.2) 1px;
+  border-bottom: dashed rgba(255, 255, 255, 0.2) 1px;
+  padding: 10px 0; }
+
+.content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+/* Footer Section */
+footer {
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 2rem;
+  color: #c2c2c2; }
+
+.footer2 {
+  height: 15vh; }
+
+/* Breakpoints */
+@media all and (min-width: 600px) {
+  .nav {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    height: 90vh; }
+  .nav2 {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    height: 25vh; }
+  .logo {
+    width: 140px; }
+  .logo2 {
+    width: 70px; }
+  .category_container {
+    -ms-flex-align: start;
+        -ms-grid-row-align: flex-start;
+        align-items: flex-start; }
+  .topStories {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .li_wrapper {
+    -ms-flex: 1 0 50%;
+        flex: 1 0 50%; } }
+
+@media all and (min-width: 1000px) {
+  .li_wrapper {
+    -ms-flex: 1 0 25%;
+        flex: 1 0 25%; }
+  .logo {
+    width: 220px; }
+  .logo2 {
+    width: 70px; }
+  .nav {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .nav2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    height: 25vh;
+    width: 25vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  footer {
+    -ms-flex-item-align: start;
+        align-self: flex-start; } }

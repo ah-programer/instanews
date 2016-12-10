@@ -1,0 +1,53 @@
+/* Breakpoints */
+
+  @media all and (min-width: 600px) {
+    .nav {
+      flex-flow: row wrap;
+      height: 90vh;
+    }
+    .nav2 {
+      flex-flow: row wrap;
+      height: 25vh;
+    }
+    .logo{
+      width: 140px;
+    }
+    .logo2{
+      width: 70px;
+    }
+    .category_container {
+      align-items: flex-start;
+    }
+    .topStories {
+      display: flex;  
+      flex-wrap: wrap;
+    }
+    .li_wrapper {
+      flex: 1 0 50%;
+    }
+
+  }
+
+  @media all and (min-width: 1000px) {
+    .li_wrapper {
+      flex: 1 0 25%;
+    }
+    .logo {
+      width: 220px;
+    }
+    .logo2 {
+      width: 70px;
+    }
+    .nav {
+      align-self: flex-start;
+    }
+    .nav2 {
+      align-self: flex-start;
+      height: 25vh;
+      width: 25vw;
+      justify-content: space-around;
+    }
+    footer {
+      align-self: flex-start;
+    }
+  }
